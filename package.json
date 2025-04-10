@@ -68,6 +68,7 @@
     "vuex-persistedstate": "^4.0.0-beta.1"
   },
   "devDependencies": {
+    "@achrinza/node-ipc": "10.1.11",
     "@prettier/plugin-pug": "^1.10.0",
     "@vue/cli-plugin-typescript": "^4.5.8",
     "@vue/cli-service": "^4.5.8",
@@ -104,6 +105,7 @@
     "trailingComma": "es5"
   },
   "resolutions": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "@achrinza/node-ipc": "^10.1.11"
   }
 }

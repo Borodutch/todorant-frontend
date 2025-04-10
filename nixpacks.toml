@@ -1,5 +1,5 @@
 [phases.setup]
-aptPkgs = ["...", "python2"]
+aptPkgs = ["...", "python2", "g++", "build-essential"]
 
 [phases.install]
 cmds = ["yarn install"]

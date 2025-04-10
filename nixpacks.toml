@@ -1,3 +1,6 @@
+[phases.setup]
+aptPkgs = ["...", "python"]
+
 [phases.install]
 cmds = ["yarn install"]
 

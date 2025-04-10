@@ -434,10 +434,10 @@ export default class TodoList extends Vue {
     }
     const matches =
       this.queryString.match(/#[\u0400-\u04FFa-zA-Z_0-9]+$/g) || []
-    if (!matches.length) {
+    const match = matches[0]
+    if (!matches.length || !match) {
       return this.showMoreByDefault ? this.tags : []
     }
-    const match = matches[0]
     return this.tags
       .filter((tag) => tag.tag.includes(match.substr(1)))
       .filter((tag) => tag.tag !== match.substr(1))
@@ -550,13 +550,13 @@ export default class TodoList extends Vue {
     }
     const matches =
       this.queryString.match(/#[\u0400-\u04FFa-zA-Z_0-9]+(?!\s)$/g) || []
-    if (!matches.length) {
+    const match = matches[0]
+    if (!matches.length || !match) {
       this.queryString = `${before}${insertText}${after}`
       ;(this.$refs.queryString as any).focus()
       setTimeout(() => bodyQueryString.setSelectionRange(endPos, endPos))
       return
     }
-    const match = matches[0]
     this.queryString = `${before.substr(
       0,
       before.length - match.length

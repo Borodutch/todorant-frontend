@@ -72,6 +72,7 @@
     "@vue/cli-plugin-typescript": "^4.5.8",
     "@vue/cli-service": "^4.5.8",
     "flat": "^5.0.2",
+    "node-sass": "^6.0.1",
     "prettier": "prettier/prettier#cd2b8a32b5ef77eb0047e7517b1ea22d605a094a",
     "sass": "^1.27.0",
     "sass-loader": "^10.0.4",
@@ -100,5 +101,8 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "es5"
+  },
+  "resolutions": {
+    "node-sass": "^6.0.1"
   }
 }
